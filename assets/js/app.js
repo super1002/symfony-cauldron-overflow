@@ -1,3 +1,6 @@
+import '../css/app.css';
+import $ from 'jquery';
+
 /**
  * Simple (ugly) code to handle the comment vote up/down
  */
