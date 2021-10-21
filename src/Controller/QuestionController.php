@@ -43,6 +43,8 @@ class QuestionController extends AbstractController
         $questionText = 'I\'ve been turned into a cat, any *thoughts* on how to turn back? While I\'m **adorable**, I don\'t really care for cat food.';
         $parsedQuestionText = $markdownHelper->parse($questionText);
 
+        // dump($this->getParameter('kernel.debug'));
+
         dump($this->getParameter('cache_adapter'));
 
         return $this->render('question/show.html.twig', [
